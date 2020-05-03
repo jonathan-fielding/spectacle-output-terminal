@@ -1,0 +1,35 @@
+{
+  "name": "spectacle-output-terminal",
+  "version": "0.0.1",
+  "description": "A spectacle extension adding a output terminal",
+  "main": "lib/spectacle-output-terminal",
+  "scripts": {
+    "build": "babel src -d lib && cp src/spectacle-output-terminal.css lib/spectacle-output-terminal.css",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonathan-fielding/spectacle-output-terminal.git"
+  },
+  "keywords": [
+    "Spectacle",
+    "presentation",
+    "code",
+    "editor"
+  ],
+  "author": "Jonathan Fielding",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jonathan-fielding/spectacle-output-terminal/issues"
+  },
+  "homepage": "https://github.com/jonathan-fielding/spectacle-output-terminal#readme",
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-preset-es2015": "^6.11.4",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-1": "^6.11.4",
+    "react": "^0.14.0 || ^15.0.0",
+    "react-dom": "^0.14.0 || ^15.0.0",
+    "spectacle": "^1.2.5"
+  }
+}

@@ -1,0 +1,105 @@
+.terminal {
+  margin: 10px 0;
+}
+
+.terminal__header {
+  background: #3d3f45;
+  color: #babbbd;
+  border-bottom: 1px solid #5c5c5d;
+  border-radius: 5px 5px 0 0;
+  font-size: 1.2rem;
+  padding: 8px 0;
+  position: relative;
+}
+
+.terminal__buttons {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  margin-top: -8px;
+}
+
+.terminal__buttons > * {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  float: left;
+  margin-right: 5px;
+}
+
+.terminal__button--red {
+  background: #ec655a;
+}
+
+.terminal__button--amber {
+  background: #e0c04c;
+}
+
+.terminal__button--green {
+  background: #72bf47;
+}
+
+.terminal__actions {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -11px;
+  font-size: 1rem;
+}
+
+.terminal__action--visualise {
+  position: relative;
+  background: #72b3fd;
+  border: 0px;
+  margin-right: 5px;
+  border-radius: 3px;
+}
+
+.terminal__action--run {
+  position: relative;
+  background: #72bf47;
+  border: 0px;
+  margin-right: 5px;
+  border-radius: 3px;
+}
+
+.terminal__action--run--active {
+  animation: animatedBackground 1.5s linear infinite;
+}
+
+@keyframes animatedBackground {
+  0% {
+    background: #72bf47;
+  }
+  50% {
+    background: rgb(65, 116, 37);
+  }
+  100% {
+    background: #72bf47;
+  }
+}
+
+.terminal__action--run:active {
+  background: rgb(80, 142, 47);
+}
+
+.terminal__action--stop {
+  background: #ec655a;
+  border: 0px;
+  border-radius: 3px;
+}
+
+.terminal__action--stop:active {
+  background: rgb(182, 64, 53);
+}
+
+.terminal__body {
+  background: #000;
+  height: 200px;
+  overflow-y: scroll;
+  color: #fff;
+  text-align: left;
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  border-radius: 0 0 5px 5px;
+}
